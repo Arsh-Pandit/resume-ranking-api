@@ -1,0 +1,5 @@
+Name: Marcus Thorne
+Education: B.A. Economics
+Skills: Python, Google Analytics, SQL
+Experience: Attribution modeling, CLV prediction
+Projects: Marketing spend optimization, churn prevention campaign

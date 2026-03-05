@@ -1,0 +1,5 @@
+Name: Rohan Malhotra
+Education: B.Tech Computer Science
+Skills: Python, PyTorch, OpenCV
+Experience: Image recognition, object detection
+Projects: Facial recognition system, traffic monitoring tool

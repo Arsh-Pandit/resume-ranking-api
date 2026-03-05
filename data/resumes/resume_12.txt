@@ -1,0 +1,5 @@
+Name: Yuki Tanaka
+Education: B.S. Data Science
+Skills: Python, PySpark, Scikit-learn
+Experience: Recommendation engines, A/B testing
+Projects: Personalized product recommender, dynamic pricing engine

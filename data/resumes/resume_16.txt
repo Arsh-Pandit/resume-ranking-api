@@ -1,0 +1,5 @@
+Name: Omar Bakir
+Education: B.Tech Electronics
+Skills: Python, TinyML, Arduino
+Experience: Edge computing, anomaly detection
+Projects: Smart home energy monitor, vibration sensor for factory machines

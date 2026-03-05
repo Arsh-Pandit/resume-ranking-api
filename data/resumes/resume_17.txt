@@ -1,0 +1,5 @@
+Name: Chloe Bennett
+Education: M.S. Artificial Intelligence
+Skills: Python, LangChain, OpenAI API
+Experience: LLM fine-tuning, prompt engineering
+Projects: Multi-agent coding assistant, RAG-based knowledge base

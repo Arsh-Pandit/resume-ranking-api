@@ -1,0 +1,5 @@
+Name: Rohit Sharma
+Education: M.Sc Data Science
+Skills: Python, NLP, TensorFlow
+Experience: Text classification, chatbot development
+Projects: Customer support chatbot, document classification

@@ -1,0 +1,5 @@
+Name: Priya Sharma
+Education: M.Tech Information Technology
+Skills: Docker, Kubernetes, MLflow
+Experience: Model deployment, CI/CD for ML
+Projects: Automated retraining pipeline, scalable inference API

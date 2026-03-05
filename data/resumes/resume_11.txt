@@ -1,0 +1,5 @@
+Name: James Wilson
+Education: M.Sc Quantitative Finance
+Skills: Python, C#, Time Series Analysis
+Experience: Algorithmic trading, risk management
+Projects: Stock price volatility predictor, credit scoring model

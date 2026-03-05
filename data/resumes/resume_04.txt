@@ -1,0 +1,5 @@
+Name: Sarah Jenkins
+Education: B.S. Statistics
+Skills: SQL, R, Tableau
+Experience: Exploratory data analysis, dashboarding
+Projects: Sales performance dashboard, churn prediction analysis

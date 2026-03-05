@@ -1,0 +1,5 @@
+Name: Meera Nair
+Education: M.S. Bioinformatics
+Skills: Python, Biopython, Scikit-learn
+Experience: Genomic sequencing, drug discovery models
+Projects: DNA sequence classifier, protein folding prediction

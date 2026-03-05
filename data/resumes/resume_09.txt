@@ -1,0 +1,5 @@
+Name: David Miller
+Education: B.E. Mechatronics
+Skills: C++, ROS, Reinforcement Learning
+Experience: Path planning, sensor fusion
+Projects: Autonomous drone navigation, robotic arm control

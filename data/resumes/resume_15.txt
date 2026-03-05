@@ -1,0 +1,5 @@
+Name: Sophie Varma
+Education: M.A. Philosophy and AI
+Skills: Python, Fairlearn, SHAP
+Experience: Bias detection, model explainability
+Projects: Audit of recruitment algorithms, XAI toolkit for healthcare

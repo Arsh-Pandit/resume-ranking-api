@@ -1,0 +1,5 @@
+Name: Liam Chen
+Education: M.S. Software Engineering
+Skills: Java, Apache Spark, AWS
+Experience: ETL pipelines, data warehousing
+Projects: Real-time data streaming, cloud migration for retail database

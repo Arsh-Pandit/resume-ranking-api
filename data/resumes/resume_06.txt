@@ -1,0 +1,5 @@
+Name: Elena Rodriguez
+Education: Ph.D. Computational Linguistics
+Skills: Python, Keras, Librosa
+Experience: Speech-to-text, sentiment analysis
+Projects: Voice-activated assistant, accent recognition model

@@ -1,0 +1,5 @@
+Name: Arjun Kapur
+Education: MBA Business Analytics
+Skills: Power BI, Excel, SQL
+Experience: Market research, financial forecasting
+Projects: Quarterly revenue report automation, customer segmentation study

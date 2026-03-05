@@ -1,0 +1,5 @@
+Name: Fatima Al-Sayed
+Education: M.S. Computer Science
+Skills: Python, NetworkX, Neo4j
+Experience: Graph analytics, social network modeling
+Projects: Influencer identification tool, community detection in forums
