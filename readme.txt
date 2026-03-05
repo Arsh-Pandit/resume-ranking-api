@@ -8,9 +8,7 @@ Output:
 - Matching score (0–100)
 - Ranked list of resumes
 
-Approach (Day 1):
-- Text similarity between resume and JD
-- No deep learning yet
+
 
 Use case:
 - Recruiters / coaching institutes / startups# AI Resume Screening & Ranking API
