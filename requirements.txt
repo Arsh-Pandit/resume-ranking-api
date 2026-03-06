@@ -3,3 +3,4 @@ scikit-learn==1.8.0
 fastapi==0.134.0
 uvicorn==0.41.0
 sentence-transformers==5.2.3
+PyMuPDF==1.27.1
