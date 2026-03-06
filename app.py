@@ -46,7 +46,11 @@ async def rank_pdf(job_description: str, resumes: list[UploadFile] = File(...)):
         text = extract_text_from_pdf(contents)
         resume_texts.append(text)
 
-    ranked = rank_resumes(job_description, resume_texts)
+    ranked = rank_resumes(
+        resumes=resume_texts,
+        jd=job_description,
+        vectorizer=vectorizer
+    )
 
     return {"ranked_resumes": ranked}
 
