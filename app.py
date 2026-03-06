@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 import joblib
-from fastapi import UploadFile, File
+from fastapi import UploadFile, File, Form
 from pdf_parser import extract_text_from_pdf
 
 from schemas.rank_schemas import RankRequest, RankResponse
@@ -37,7 +37,10 @@ def rank_endpoint(request: RankRequest):
     return {"ranked_resumes": response}
 
 @app.post("/rank-pdf")
-async def rank_pdf(job_description: str, resumes: list[UploadFile] = File(...)):
+async def rank_pdf(
+    job_description: str = Form(...),
+    resumes: list[UploadFile] = File(...)
+):
 
     resume_texts = []
 
@@ -52,7 +55,12 @@ async def rank_pdf(job_description: str, resumes: list[UploadFile] = File(...)):
         vectorizer=vectorizer
     )
 
-    return {"ranked_resumes": ranked}
+    response = [
+        {"resume_id": idx + 1, "score": round(score * 100, 2)}
+        for idx, score in ranked
+    ]
+
+    return {"ranked_resumes": response}
 
 @app.get("/health")
 def health_check():
