@@ -2,7 +2,7 @@ from fastapi import FastAPI
 import joblib
 
 from schemas.rank_schemas import RankRequest, RankResponse
-from ranking import rank_resumes
+from semantic_ranker import rank_resumes
 from fastapi import HTTPException
 
 app = FastAPI()
