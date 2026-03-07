@@ -3,6 +3,7 @@ import joblib
 from fastapi import UploadFile, File, Form
 from pdf_parser import extract_text_from_pdf
 
+
 from schemas.rank_schemas import RankRequest, RankResponse
 from semantic_ranker import rank_resumes
 from fastapi import HTTPException
@@ -36,10 +37,10 @@ def rank_endpoint(request: RankRequest):
 
     return {"ranked_resumes": response}
 
-@app.post("/rank-pdf")
+@app.post("/rank-pdf", response_model=RankResponse)
 async def rank_pdf(
     job_description: str = Form(...),
-    resumes: list[UploadFile] = File(...)
+    resumes: UploadFile = File(...)
 ):
 
     resume_texts = []
