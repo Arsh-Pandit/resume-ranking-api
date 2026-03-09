@@ -1,7 +1,7 @@
 from fastapi import FastAPI
-import joblib
 from fastapi import UploadFile, File, Form
 from pdf_parser import extract_text_from_pdf
+from skill_extractor import extract_skills
 
 
 from schemas.rank_schemas import RankRequest, RankResponse
@@ -10,8 +10,6 @@ from fastapi import HTTPException
 
 app = FastAPI()
 
-# Load model artifacts once (important)
-vectorizer = joblib.load("models/tfidf_vectorizer.joblib")
 
 
 
@@ -25,15 +23,18 @@ def rank_endpoint(request: RankRequest):
         raise HTTPException(status_code=400, detail="Resume list cannot be empty")
 
     results = rank_resumes(
-        resumes=request.resumes,
-        jd=request.job_description,
-        vectorizer=vectorizer
+        jd = request.job_description,
+        resumes = request.resumes
     )
 
-    response = [
-        {"resume_id": idx+1, "score": round(score * 100, 2)}
-        for idx, score in results
-    ]
+    response = []
+    for i, (resume_text, score) in enumerate(results):
+        skills = extract_skills(resume_text)
+        response.append({
+            "resume_id": i + 1,
+            "score": round(score * 100, 2),
+            "skills_found": skills
+        })
 
     return {"ranked_resumes": response}
 
@@ -51,15 +52,20 @@ async def rank_pdf(
         resume_texts.append(text)
 
     ranked = rank_resumes(
-        resumes=resume_texts,
         jd=job_description,
-        vectorizer=vectorizer
+        resumes=resume_texts
     )
 
-    response = [
-        {"resume_id": idx + 1, "score": round(score * 100, 2)}
-        for idx, score in ranked
-    ]
+    response = []
+    for i, (resume_text, score) in enumerate(ranked):
+
+        skills = extract_skills(resume_text)
+
+        response.append({
+            "resume_id": i + 1,
+            "score": round(score * 100, 2),
+            "skills_found": skills
+        })
 
     return {"ranked_resumes": response}
 
