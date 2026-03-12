@@ -1,12 +1,23 @@
+import re
 from skills import SKILLS
 
-def extract_skills(text):
+
+def normalize_text(text: str) -> str:
 
     text = text.lower()
-    found = []
+    text = re.sub(r"[\/,|]", " ", text)
+    text = re.sub(r"\s+", " ", text)
+    return text
+
+
+def extract_skills(text: str):
+
+    text = normalize_text(text)
+    found_skills = set()
 
     for skill in SKILLS:
-        if skill in text:
-            found.append(skill)
+        pattern = r"\b" + re.escape(skill) + r"\b"
+        if re.search(pattern, text):
+            found_skills.add(skill)
 
-    return found
+    return sorted(list(found_skills))
