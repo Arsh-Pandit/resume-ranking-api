@@ -1,0 +1,83 @@
+{
+  "Programming Languages": {
+    "JavaScript": ["js", "reactjs", "nodejs", "ecmascript", "es6", "vanilla-js"],
+    "Python": ["py", "cpython", "jupyter", "ipython"],
+    "TypeScript": ["ts", "tsc"],
+    "C++": ["cpp", "cplusplus", "cxx"],
+    "C#": ["cs", "c-sharp", "dotnet", ".net", "mono"],
+    "Java": ["jvm", "jdk", "j2ee"],
+    "Ruby": ["rb", "ror", "rails"],
+    "Rust": ["rs", "cargo"],
+    "Golang": ["go", "go-lang"],
+    "Kotlin": ["kt", "kts"],
+    "Swift": ["apple-swift", "ios-swift"],
+    "PHP": ["hyper-text-preprocessor", "lamp"]
+  },
+  "Machine Learning & AI": {
+    "Machine Learning": ["ml", "sklearn", "scikit-learn"],
+    "Deep Learning": ["dl", "neural-networks", "dnn", "cnn", "rnn"],
+    "Natural Language Processing": ["nlp", "llm", "bert", "gpt", "transformers"],
+    "Computer Vision": ["cv", "opencv", "image-processing"],
+    "TensorFlow": ["tf", "tfjs", "tflite"],
+    "PyTorch": ["torch", "pytorch-lightning"],
+    "Keras": ["keras-api", "tf-keras"],
+    "Pandas": ["pd", "dataframe"],
+    "NumPy": ["np", "ndarray"],
+    "Hugging Face": ["hf", "hf-hub"],
+    "Generative AI": ["genai", "ai-art", "llm-apps"]
+  },
+  "Frontend Frameworks": {
+    "React": ["react.js", "rjs", "hooks", "jsx"],
+    "Vue.js": ["vue", "vjs", "vue3", "vue2"],
+    "Angular": ["ng", "ngx", "angular-io"],
+    "Next.js": ["next", "ssr-react"],
+    "Svelte": ["sveltejs", "svelte-kit"],
+    "SolidJS": ["solid", "solid-js"]
+  },
+  "Backend Frameworks": {
+    "Node.js": ["node", "server-side-js"],
+    "Express": ["expressjs", "ex"],
+    "Django": ["dj", "djangorestframework", "drf"],
+    "Spring Boot": ["spring", "spring-framework", "java-spring"],
+    "FastAPI": ["fa", "pydantic-api"],
+    "Laravel": ["php-laravel", "artisan"]
+  },
+  "Cloud & DevOps": {
+    "AWS": ["Amazon Web Services", "ec2", "s3", "lambda", "cloudformation"],
+    "Google Cloud": ["gcp", "gke", "bigquery", "gcloud"],
+    "Microsoft Azure": ["azure", "az", "azure-devops"],
+    "Kubernetes": ["k8s", "kube", "kubectl", "helm"],
+    "Docker": ["container", "docker-compose", "oci"],
+    "Terraform": ["tf", "iac", "hcl"],
+    "GitHub Actions": ["gha", "workflows"]
+  },
+  "Databases & Big Data": {
+    "PostgreSQL": ["postgres", "pg", "psql"],
+    "MongoDB": ["mongo", "nosql-document"],
+    "Redis": ["in-memory-db", "cache"],
+    "Apache Spark": ["spark", "pyspark", "spark-sql"],
+    "Apache Kafka": ["kafka", "event-streaming"],
+    "Snowflake": ["data-warehouse", "cloud-data"]
+  },
+  "AI Tools": {
+    "ChatGPT": ["openai", "gpt-4", "gpt-3.5"],
+    "Gemini": ["bard", "google-ai", "vertex-ai"],
+    "Claude": ["anthropic", "claude-3"],
+    "GitHub Copilot": ["copilot", "ai-coding-assistant"],
+    "Stable Diffusion": ["sd", "latent-diffusion"]
+  },
+  "Testing & Mobile": {
+    "Selenium": ["webdriver", "browser-automation"],
+    "Cypress": ["cy", "e2e-testing"],
+    "Playwright": ["pw", "headless-browser"],
+    "React Native": ["rn", "cross-platform-mobile"],
+    "Flutter": ["dart-ui", "flutter-sdk"]
+  },
+  "Security": {
+    "InfoSec": ["Information Security", "cyber-security"],
+    "AppSec": ["Application Security"],
+    "Pentest": ["Penetration Testing", "ethical-hacking"],
+    "Wireshark": ["pcap", "packet-sniffing"],
+    "Metasploit": ["msf", "exploitation-framework"]
+  }
+}

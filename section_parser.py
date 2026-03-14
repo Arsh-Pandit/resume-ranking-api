@@ -64,9 +64,6 @@ def detect_section(line: str):
 
 
 def parse_resume_sections(text: str):
-    """
-    Parse resume text and split it into structured sections.
-    """
 
     sections = {
         "skills": [],
